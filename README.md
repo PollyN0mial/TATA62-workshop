@@ -33,8 +33,12 @@ Similar to Python, Julia works with packages. To install a package, write the fo
 >>> ]add "packagename"
 ```
 
-Useful Julia packages:
+Some useful Julia packages:
 * `JuMP` - mathematical programming in Julia
+* `CSV` - allows to work with CSV files for data management
+* `DataFrames` - set of tools for working with tabular data in Julia
+
+Run the file "init.jl" to install the necessary packages for this tutorial. It also includes some suggestions for other useful packages.
 
 
 ### Git
@@ -50,9 +54,21 @@ Support for editing Julia is available for many [widely used editors](https://gi
 
 If you like using IDEs, I highly recommend using VS Code with the [julia-vscode](https://www.julia-vscode.org/) plugin. For notebook users, [Jupyter](https://jupyter.org/) notebook support is available through the [IJulia](https://github.com/JuliaLang/IJulia.jl) package
 
-### Check that it works
+
 
 ## Methods
+
+
+In today's workshop we will touch upon two optimization solvers: the Mixed-Integer Programming (MIP) solver Gurobi Optimizer and the Constraint Programming (CP)-based solver IBM ILOG CP Optimizer. Both these types of solvers can be used in a model-and-run-type of solution approach.
+This means:
+
+*Mathematically describe your optimisation problem as a model (model)
+*Let the solver solve your model (and run)
+
+A reason behind this type of approach is that all NP-complete problems can be modelled as a MIP, CP (or Boolean satisfiability), thanks to the nature of NP-hardness. This means that for most practical problems, we can model them using our preferred framework and solve using our preferred solver (that we do not even have to develop!). However, worst-case performance is still exponential, meaning that we might not get an answer given a time limit. From this follows, that the choice of model, modelling framework, and solver can have a significant effect on the computational performance.
+
+*Note*: The generic solvers for MIP, CP, SAT are really really good (think years of engineering/research by experts). If you want to compete (develop your own solver) you need to take serious advantage of your problem structure.
+
 
 ### Mixed integer programming modelling
 
@@ -117,6 +133,8 @@ There exists a large number of CP solvers and modelling frameworks. A few of the
 
 ### Automated planning
 
+Automated planning and scheduling in AI is the process of using computers to automatically plan and schedule actions or events. This can include planning and scheduling tasks, resources, and events.
+
 ## Implementation
 
 ### Git
@@ -168,6 +186,7 @@ If you want to work directly on master, it is a bit simpler:
 >>> git push  # Might yield conflict if someone else made an update
 ```
 
+
 ### Algorithm development
 
 When developing an algorithm there are a few things that are suggested to keep in mind:
@@ -176,12 +195,28 @@ When developing an algorithm there are a few things that are suggested to keep i
 * Logging (how long time did it take, optimal solution value, which parameters where used, etc.)
 * Good software practices: follow a code style, separation of concerns, avoid duplicate code, etc.
 
-Useful Julia packages:
-* `JuMP` - mathematical programming in Julia
+
+## Julia specific information
+
+
+### MIP
+
+
+### CP
+
+The CP library in Julia is a bit limited, but as a starting point you can look at the following:
+* [Minizinc](https://www.minizinc.org/challenge2022/results2022.html) is a modelling framework for CP, and possible to import/export in Julia. See also the documentation on [JuliaHub](https://juliahub.com/ui/Packages/General/MiniZinc/).
+* [ConstraintSolver.jl](https://docs.juliahub.com/ConstraintSolver/Wsz6B/0.6.7/) is a pure Julia CP-solver
+* [Chuffed.jl](https://github.com/JuliaConstraints/Chuffed.jl) is a Julia wrapper for the Chuffed solver
+
+### AP
+
+* [PDDL in Julia](https://github.com/JuliaPlanners/PDDL.jl)
+
 
 ## Extra material
 
 Here are some additional links that might be useful:
-* [Minizinc](https://www.minizinc.org/challenge2022/results2022.html)
 * https://ipc2023-classical.github.io/
 * https://github.com/AI-Planning/planutils
+* [Google OR Tools](https://developers.google.com/optimization), open source solver from Google
