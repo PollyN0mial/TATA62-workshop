@@ -1,5 +1,5 @@
 using JuMP,Cbc
-include("data_MIP.jl")
+include("../import_data.jl")
 include("model_MIP.jl")
 
 
