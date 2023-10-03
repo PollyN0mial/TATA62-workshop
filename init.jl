@@ -2,7 +2,8 @@ import Pkg
 
 # Programming languages
 Pkg.add("JuMP")
-Pkg.add("MiniZinc")
+#Pkg.add("MiniZinc")
+Pkg.add("ConstraintSolver")
 Pkg.add("PDDL")
 
 
