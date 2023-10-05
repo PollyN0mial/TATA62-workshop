@@ -133,7 +133,26 @@ There exists a large number of CP solvers and modelling frameworks. A few of the
 
 ### Automated planning
 
-Automated planning and scheduling in AI is the process of using computers to automatically plan and schedule actions or events. This can include planning and scheduling tasks, resources, and events.
+Planning can be defined as using knowledge about the world, including possible actions and their results, to decide what to do and when in order to achieve an objective before you actually start doing it.
+
+Some assumptions in classical planning:
+1. We assume that the world is always in a given state, which we want to affect.
+    * Finite number of states
+    * We can always detect the current state
+2. A world can only be affected by executing an action
+3. Every action results in a discrete state transition
+4. Actions are deterministic
+5. The objective is always to end up in a goal state
+   
+A plan is sequence of actions. An action sequence is a solution if is executable and results in a goal state. A cost function can be added to measure if the solution is good (example: minimize total plan cost).
+
+We therefore need sets of
+1. States (finite)
+2. Actions (finite)
+
+
+See also [slides](https://www.ida.liu.se/~TDDD48/pdf/) from the course `TDDD48: Automated planning` given at LiU.
+
 
 ## Implementation
 
