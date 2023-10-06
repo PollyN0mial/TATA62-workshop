@@ -1,7 +1,7 @@
 using JuMP, ConstraintSolver, UnPack
 const CS = ConstraintSolver
 
-include("import_data.jl")
+include("../import_data.jl")
 
 
 """
@@ -9,7 +9,7 @@ include("import_data.jl")
 
 Solves a knapsack problem using CP based on the data provided in "file"
 """
-function solveCP(file="instances/knapPI_11_20_1000_1.csv")
+function solveCP(file="../instances/knapPI_11_20_1000_1.csv")
     
     # Import the data
     sets, params = import_data(file)

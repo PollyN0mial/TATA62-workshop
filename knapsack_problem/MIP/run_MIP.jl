@@ -1,4 +1,4 @@
-using JuMP,Cbc
+using JuMP, Cbc
 include("../import_data.jl")
 include("model_MIP.jl")
 
@@ -27,3 +27,4 @@ function solve_problem(file="../instances/knapPI_11_20_1000_1.csv")
 end
 
 
+solve_problem()
