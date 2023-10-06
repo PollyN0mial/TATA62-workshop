@@ -240,6 +240,7 @@ The CP library in Julia is a bit limited, but as a starting point you can look a
 ### AP
 
 * [PDDL in Julia](https://github.com/JuliaPlanners/PDDL.jl)
+* [SymbolicPlanners.jl](https://github.com/JuliaPlanners/SymbolicPlanners.jl) is a library of solvers for planning problems. See the [documentation](https://juliaplanners.github.io/SymbolicPlanners.jl/dev/) for example of usage.
 
 
 ## Extra material
