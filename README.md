@@ -39,7 +39,7 @@ Some useful Julia packages:
 * `CSV` - allows to work with CSV files for data management
 * `DataFrames` - set of tools for working with tabular data in Julia
 
-Run the file "init.jl" to install the necessary packages for this tutorial. It also includes some suggestions for other useful packages.
+Run the file `init.jl` to install the necessary packages for this tutorial. It also includes some suggestions for other useful packages.
 
 
 ### Git
