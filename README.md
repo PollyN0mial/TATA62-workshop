@@ -1,17 +1,17 @@
 # TATA62 workshop
 Welcome to this workshop!
 
-My name is [Caroline Granfeldt](mailto:caroline.granfeldt@saabgroup.com) and I work as a Research Scientist at Saab Aeronautics in Linköping. I have a PhD in Optimization from Chalmers University of Technology (2016-2023). The purpose of this workshop is to introduce you to some optimization tools and algorithms.
+My name is [Caroline Granfeldt](mailto:caroline.granfeldt@saabgroup.com) and I work as a Research Scientist at Saab Aeronautics in Linköping. I have a PhD in Optimization from Chalmers University of Technology (2016-2023), where I worked mainly with linear optimization models. The purpose of this workshop is to introduce you to some optimization tools and algorithms.
 
 My intention for this workshop is to interact with you all, make sure that everyone understand the basics of these tools and hopefully we will together be able to sort out any question marks!
 
-Since this is a project course performed in a later year of your education. I expect you to be able to accomplish some things with less guidance from me than in the basic courses. Hence I expect everyone to make sure that every participent will have installed the tools that we will use and made sure that they work BEFORE the teaching seminar! However, I am here to help so if you have any questions or run into troubles, do not hesitate to ask me for a meeting or help via my [email](mailto:caroline.granfeldt@saabgroup.com).
+Since this is a project course performed in a later year of your education. I expect you to be able to accomplish some things with less guidance from me than in the basic courses. Hence I expect everyone to make sure that every participent will have installed the tools that we will use and made sure that they work BEFORE the workshop! However, I am here to help so if you have any questions or run into troubles, do not hesitate to ask me for a meeting or help via my [email](mailto:caroline.granfeldt@saabgroup.com).
 
 The material that we will use in the workshop is available in a [github repository](https://github.com/PollyN0mial/TATA62-workshop/tree/main).
-Before the teaching seminar I expect you to:
+Before the workshop I expect you to:
 
 - Install the software we will use (see below)
-- Make sure that the software works
+- If possible, make sure that the software works
 
 ## Software and installation
 
@@ -26,7 +26,7 @@ The software tools that we will use are:
 
 
 ### Julia
-Julia can be downloaded from their [website](https://julialang.org/downloads/) . The current stable release of Julia is v1.9.3.
+Julia can be downloaded from their [website](https://julialang.org/downloads/). The current stable release of Julia is v1.9.3.
 
 Similar to Python, Julia works with packages. To install a package, write the following in a Julia REPL:
 
